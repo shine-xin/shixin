@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册-360个人中心</title>
+    <link rel="short icon" href="./img/360.ico">
+    <link href="css/login.css" type="text/css" rel="stylesheet">
+    <link href="css/base.css" type="text/css" rel="stylesheet">
+    <link href="css/signin.css" type="text/css" rel="stylesheet">
+    <style type="text/css">
+        @font-face {
+            font-family: 'iconfont';
+            src: url('iconfont.eot');
+            src: url('iconfont.eot?#iefix') format('embedded-opentype'),
+            url('iconfont.woff') format('woff'),
+            url('iconfont.ttf') format('truetype'),
+            url('iconfont.svg#iconfont') format('svg');
+        }
+        @font-face {
+            font-family: 'iconfont';  /* project id 292091 */
+            src: url('//at.alicdn.com/t/font_zr1pal2z8mcs1yvi.eot');
+            src: url('//at.alicdn.com/t/font_zr1pal2z8mcs1yvi.eot?#iefix') format('embedded-opentype'),
+            url('//at.alicdn.com/t/font_zr1pal2z8mcs1yvi.woff') format('woff'),
+            url('//at.alicdn.com/t/font_zr1pal2z8mcs1yvi.ttf') format('truetype'),
+            url('//at.alicdn.com/t/font_zr1pal2z8mcs1yvi.svg#iconfont') format('svg');
+        }
+    </style>
+</head>
+<body>
+<div id="login_header">
+    <div class="login_header_logo">
+        <img src="img/360logo.jpg">
+        <span>|</span>
+        <span>注册账号</span>
+    </div>
+</div>
+<div id="signin_main">
+    <div class="signin_main_box">
+        <div class="signin_main_tit">
+            <p>注册360账号</p>
+        </div>
+        <div class="signin_main_ipt">
+            <input type="text" placeholder="手机号/用户名/邮箱">
+            <br>
+            <input type="password"  placeholder="密码/动态密码" maxlength="20">
+            <br>
+            <input type="text" placeholder="请输入验证码">
+            <img src="img/captcha.jpg">
+            <br>
+            <input type="submit" value="下一步">
+        </div>
+        <p>点击“下一步”，即表示您已同意并愿意遵守<span>《360用户服务条款》</span></p>
+    </div>
+</div>
+<div class="cl"></div>
+<div id="login_footer">
+    <div class="signin_footer_help">
+        <p>帮助中心<span>|</span>立刻申诉</p>
+    </div>
+    <div class="foot">
+        Copyright©2005-<span>2015</span> 360.CN All Rights Reserved 360安全中心
+        <p><span>京ICP证080047号[京ICP备08010314号-6] </span></p>
+        <p>
+
+            <img src="img/wangan-icon.png">京公网安备 11000002000006号
+        </p>
+    </div>
+</div>
+</div>
+</body>
+<script type="text/javascript" src="js/login.js"></script>
+<script type="text/javascript">
+    var ipts=document.querySelectorAll('#signin_main .signin_main_box .signin_main_ipt input');
+    for (var i=0;i<ipts.length-1;i++){
+        ipts[i].onfocus=function () {
+            this.style.border='2px solid #22AC69';
+        }
+        ipts[i].onblur=function () {
+            this.style.border='2px solid #ddd';
+        }
+    }
+</script>
+</html>
